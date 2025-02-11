@@ -168,6 +168,7 @@ nav {
     margin-left: 65px;
     gap: 50px;
     background: rgba(34, 40, 49, 1);
+    overflow: hidden;
 }
 
 .works {
@@ -200,4 +201,171 @@ nav {
 .allimages img {
     border-radius: 16px;
     overflow: hidden;
+}
+
+/* For WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* For Firefox */
+html {
+    scrollbar-width: none;
+}
+
+/* For Internet Explorer/Edge */
+body {
+    -ms-overflow-style: none;
+}
+
+.contact-container {
+    display: flex;
+    background-color: rgba(34, 40, 49, 1);
+    padding: 40px;
+    width: 80%;
+    border: none;
+    margin: 0 auto;
+    /* Centers the container */
+    font-family: Poppins;
+    justify-content: space-between;
+    /* Spaces left & right sections evenly */
+    align-items: center;
+    /* Aligns both sections in the center */
+    min-height: 100vh;
+    /* Makes it full-page */
+}
+
+.left-section,
+.right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centers content vertically */
+    align-items: flex-start;
+    /* Aligns content to the left */
+}
+
+.left-section {
+    text-align: left;
+    padding-right: 50px;
+}
+
+.left-section h1 {
+    font-size: 64px;
+}
+
+.illustration {
+    margin-left: 180px;
+    width: auto;
+    margin-top: 20px;
+}
+
+.inputtxt {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.right-section {
+    max-width: 500px;
+    /* Restricts width for better alignment */
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.input-group div {
+    flex: 1;
+    margin-right: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    background: #333;
+    color: white;
+}
+
+textarea {
+    height: 100px;
+}
+
+.contactbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #00adb5;
+    color: white;
+    padding: 10px 20px;
+    font-family: Poppins;
+    font-weight: bold;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.icon-space {
+    margin-left: 8px;
+    /* Adjust spacing as needed */
+}
+
+.footer {
+    background-color: rgba(34, 40, 49, 1);
+    padding: 20px;
+    text-align: center;
+    font-family: Poppins;
+    position: relative;
+    margin-top: 80px;
+}
+
+.icon-gap {
+    margin-right: 5px;
+}
+
+.footer-links {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: rgba(238, 238, 238, 1);
+    text-decoration: none;
+    font-family: Poppins;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.social-icons {
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    margin: 0 8px;
+}
+
+.footer-bottom {
+    font-family: Poppins;
+    position: relative;
+    bottom: 30px;
+    right: 80px;
+    text-align: right;
+    margin-top: 100px;
+    color: rgba(238, 238, 238, 0.75);
 }
