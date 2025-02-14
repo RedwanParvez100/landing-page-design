@@ -52,16 +52,16 @@ nav {
 
 .hero {
     display: flex;
-    font-family: Poppins;
     justify-content: space-between;
     align-items: center;
     padding: 4rem;
-    max-width: 1600px;
+    max-width: 1420px;
     margin: 0 auto;
 }
 
 .hero-content {
     max-width: 500px;
+    margin-left: 50px;
 }
 
 .title {
